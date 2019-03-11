@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C88B65DC2236EE850072FF02 /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = C88B65DB2236EE850072FF02 /* Shot.m */; };
+		C88B65DF2236EFD90072FF02 /* ActivityMain.m in Sources */ = {isa = PBXBuildFile; fileRef = C88B65DE2236EFD90072FF02 /* ActivityMain.m */; };
+		C88B65E22236F01D0072FF02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C88B65E12236F01D0072FF02 /* main.m */; };
 		C8CBD6AF2231D93B00440CF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CBD6AE2231D93B00440CF5 /* main.m */; };
 		C8CBD6B22231D93B00440CF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CBD6B12231D93B00440CF5 /* AppDelegate.m */; };
-		C8CBD6B42231D93B00440CF5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6B32231D93B00440CF5 /* GameScene.sks */; };
-		C8CBD6B62231D93B00440CF5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6B52231D93B00440CF5 /* Actions.sks */; };
-		C8CBD6B92231D93B00440CF5 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CBD6B82231D93B00440CF5 /* GameScene.m */; };
-		C8CBD6BC2231D93B00440CF5 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CBD6BB2231D93B00440CF5 /* GameViewController.m */; };
 		C8CBD6BF2231D93B00440CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6BD2231D93B00440CF5 /* Main.storyboard */; };
 		C8CBD6C12231D93B00440CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6C02231D93B00440CF5 /* Assets.xcassets */; };
 		C8CBD6C42231D93B00440CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6C22231D93B00440CF5 /* LaunchScreen.storyboard */; };
@@ -38,16 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C88B65DB2236EE850072FF02 /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
+		C88B65DD2236EEAF0072FF02 /* Shot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Shot.h; path = ../../CS441_p3/TankMeLater/TankMeLater/Shot.h; sourceTree = "<group>"; };
+		C88B65DE2236EFD90072FF02 /* ActivityMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityMain.m; path = ../../CS441_p3/TankMeLater/TankMeLater/ActivityMain.m; sourceTree = "<group>"; };
+		C88B65E02236EFE00072FF02 /* ActivityMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActivityMain.h; path = ../../CS441_p3/TankMeLater/TankMeLater/ActivityMain.h; sourceTree = "<group>"; };
+		C88B65E12236F01D0072FF02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../CS441_p3/TankMeLater/TankMeLater/main.m; sourceTree = "<group>"; };
 		C8CBD6AA2231D93B00440CF5 /* TowerDefense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TowerDefense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CBD6AE2231D93B00440CF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C8CBD6B02231D93B00440CF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C8CBD6B12231D93B00440CF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C8CBD6B32231D93B00440CF5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		C8CBD6B52231D93B00440CF5 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		C8CBD6B72231D93B00440CF5 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		C8CBD6B82231D93B00440CF5 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		C8CBD6BA2231D93B00440CF5 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		C8CBD6BB2231D93B00440CF5 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		C8CBD6BE2231D93B00440CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8CBD6C02231D93B00440CF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8CBD6C32231D93B00440CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,16 +108,15 @@
 			children = (
 				C8CBD6B02231D93B00440CF5 /* AppDelegate.h */,
 				C8CBD6B12231D93B00440CF5 /* AppDelegate.m */,
-				C8CBD6B32231D93B00440CF5 /* GameScene.sks */,
-				C8CBD6B52231D93B00440CF5 /* Actions.sks */,
-				C8CBD6B72231D93B00440CF5 /* GameScene.h */,
-				C8CBD6B82231D93B00440CF5 /* GameScene.m */,
-				C8CBD6BA2231D93B00440CF5 /* GameViewController.h */,
-				C8CBD6BB2231D93B00440CF5 /* GameViewController.m */,
+				C88B65DD2236EEAF0072FF02 /* Shot.h */,
+				C88B65DB2236EE850072FF02 /* Shot.m */,
+				C88B65E02236EFE00072FF02 /* ActivityMain.h */,
+				C88B65DE2236EFD90072FF02 /* ActivityMain.m */,
 				C8CBD6BD2231D93B00440CF5 /* Main.storyboard */,
 				C8CBD6C02231D93B00440CF5 /* Assets.xcassets */,
 				C8CBD6C22231D93B00440CF5 /* LaunchScreen.storyboard */,
 				C8CBD6C52231D93B00440CF5 /* Info.plist */,
+				C88B65E12236F01D0072FF02 /* main.m */,
 				C8CBD6AD2231D93B00440CF5 /* Supporting Files */,
 			);
 			path = TowerDefense;
@@ -258,10 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8CBD6BF2231D93B00440CF5 /* Main.storyboard in Resources */,
-				C8CBD6B42231D93B00440CF5 /* GameScene.sks in Resources */,
 				C8CBD6C12231D93B00440CF5 /* Assets.xcassets in Resources */,
 				C8CBD6C42231D93B00440CF5 /* LaunchScreen.storyboard in Resources */,
-				C8CBD6B62231D93B00440CF5 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,10 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8CBD6BC2231D93B00440CF5 /* GameViewController.m in Sources */,
+				C88B65E22236F01D0072FF02 /* main.m in Sources */,
+				C88B65DC2236EE850072FF02 /* Shot.m in Sources */,
 				C8CBD6B22231D93B00440CF5 /* AppDelegate.m in Sources */,
-				C8CBD6B92231D93B00440CF5 /* GameScene.m in Sources */,
 				C8CBD6AF2231D93B00440CF5 /* main.m in Sources */,
+				C88B65DF2236EFD90072FF02 /* ActivityMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
