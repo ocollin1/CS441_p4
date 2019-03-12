@@ -1,5 +1,5 @@
 //
-//  Shot.h
+//  Jet.h
 //  TowerDefense
 //
 //  Created by Owen Collins on 3/12/19.
@@ -10,12 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Shot : UIImageView
+@interface Jet : UIImageView
 
 @property (nonatomic) float x, y;
 @property (nonatomic) float dx, dy;
+@property (nonatomic) int dropTime;
 @property (nonatomic) float angle;
-@property (nonatomic) BOOL is_bomb;
+@property (nonatomic) BOOL notHit;
 @end
 
 NS_ASSUME_NONNULL_END

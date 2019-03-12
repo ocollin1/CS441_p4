@@ -1,5 +1,5 @@
 //
-//  Shot.m
+//  Jet.m
 //  TowerDefense
 //
 //  Created by Owen Collins on 3/12/19.
@@ -7,22 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Shot.h"
-
-@implementation Shot
+#import "Jet.h"
+@implementation Jet
 
 -(id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self)
     {
-        [self setImage:[UIImage imageNamed:@"Shot"]];
+        
+        self.dropTime = rand() % 30;
+        self.notHit = true;
         self.dx = 0;
         self.dy = 0;
     }
     
     return self;
 }
-
 
 @end
