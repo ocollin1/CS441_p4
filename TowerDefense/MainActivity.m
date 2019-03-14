@@ -18,12 +18,12 @@
 #define TURRET_SIZE ((int) 50)
 
 
-@implementation ActivityMain:UIView
+@implementation MainActivity:UIView
 //@synthesize tank;
 @synthesize shots;
 @synthesize jets;
-@synthesize shotsToRemove;
-@synthesize jetsToRemove;
+//@synthesize shotsToRemove;
+//@synthesize jetsToRemove;
 @synthesize turrets;
 @synthesize timeM, timeS, jetTime;
 @synthesize retButton;
@@ -65,9 +65,9 @@
         
         jets = [[NSMutableArray alloc] init];
         
-        shotsToRemove = [[NSMutableArray alloc] init];
+        //shotsToRemove = [[NSMutableArray alloc] init];
         
-        jetsToRemove = [[NSMutableArray alloc] init];
+        //jetsToRemove = [[NSMutableArray alloc] init];
         
         timeM = MAIN_TIME;
         timeS = 0;
@@ -82,31 +82,7 @@
 }
 
 #pragma mark
--(IBAction)right:(id)sender
-{
-    if (self.dx < TANK_SPEED && !self.is_destroyed){
-        self.dx = TANK_SPEED;
-        //[tank setImage:[UIImage imageNamed:@"tankRight.png"]];
-    } else if(self.dx == TANK_SPEED){
-        
-    }
-    
-    //self.dy += 5 * sin(self.angle);
-    // NSLog(@"Thrust %f %f", self.dx, self.dy);
-}
 
--(IBAction)left:(id)sender
-{
-    
-    if (self.dx > -TANK_SPEED && !self.is_destroyed){
-        self.dx = -1*TANK_SPEED;
-        //[tank setImage:[UIImage imageNamed:@"tankLeft.png"]];
-    }else if(self.dx == -TANK_SPEED){
-        
-    }
-    //self.dy += 5 * sin(self.angle);
-    // NSLog(@"Thrust %f %f", self.dx, self.dy);
-}
 
 - (void) targeter: (UITapGestureRecognizer *)recognizer
 {
@@ -179,14 +155,14 @@
         
         //end
         
-        
-        if(tank.alpha == 1.0){
+        //swap tank with base
+        if(base.alpha == 1.0){
             
             
-            CGPoint tankPos = [tank center];
-            CGRect r = CGRectMake(tankPos.x, tankPos.y-160, 200, 200);
-            [tank setFrame:r];
-            [tank setImage:[UIImage imageNamed:@"endEx"]];
+            CGPoint basePos = [base center];
+            CGRect r = CGRectMake(basePos.x, basePos.y-160, 200, 200);
+            [base setFrame:r];
+            [base setImage:[UIImage imageNamed:@"endEx"]];
             for (Shot *s in shots){
                 
                 CGPoint p = [s center];
@@ -210,13 +186,13 @@
                 
             }
             
-            tank.alpha -= 0.05;
+            base.alpha -= 0.05;
             
-        } else if ( tank.alpha == 0){
+        } else if ( base.alpha == 0){
             
             
         } else {
-            tank.alpha -= 0.05;
+            base.alpha -= 0.05;
             
         }
         
@@ -225,7 +201,7 @@
     } else {
         
         CGRect r = [self frame];
-        CGPoint p = [tank center];
+        CGPoint p = [base center];
         if( p.x >= r.size.width || p.x < 0 ){
             self.dx *= -1;
             
@@ -236,11 +212,11 @@
             self.reloadT--;
         }
         
-        [tank setCenter:p];
+        [base setCenter:p];
         
         //check shots
         
-        for (Shot *s in shots)
+        for (Jet *s in jets)
         {
             
             CGPoint p = [s center];
@@ -248,7 +224,7 @@
             p.y += [s dy];
             [s setCenter:p];
             if (((p.x < 0) || (p.x > r.size.width)) || ((p.y < 0)||(p.y > r.size.height))){ [s removeFromSuperview]; }
-            if(s.is_bomb && CGRectIntersectsRect(tank.frame, s.frame)){
+            if(CGRectIntersectsRect(base.frame, s.frame)){
                 
                 self.is_destroyed = true;
                 
@@ -261,20 +237,15 @@
             self.newJ--;
         } else {
             
-            int direction = arc4random_uniform(10); //either right or left
-            int height = arc4random_uniform(175);   //y coord
+            //int direction = 10; //either right or left
+            int height = 175;   //y coord
             Jet *j;
             //j.notHit = true;
-            if(direction < 5){
-                j = [[Jet alloc] initWithFrame:CGRectMake(0, height, 60, 60)];
-                [j setImage:[UIImage imageNamed:@"Truck"]];
-                [j setDx:(rand() % 14)+6];
-            } else {
-                j = [[Jet alloc] initWithFrame:CGRectMake(r.size.width-50, height, 60, 60)];
-                [j setImage:[UIImage imageNamed:@"Truck"]];
-                [j setDx:(rand() % 14)+6];
-                j.dx *= -1;
-            }
+            
+            j = [[Jet alloc] initWithFrame:CGRectMake(0, height, 60, 60)];
+            [j setImage:[UIImage imageNamed:@"Truck"]];
+            [j setDx:(rand() % 14)+6];
+            
             [self addSubview:j];
             [jets addObject:j];
             
@@ -289,24 +260,6 @@
                 CGPoint p = [j center];
                 p.x += [j dx];
                 p.y += [j dy];
-                //check dropped bomb
-                if(j.dropTime == 0){
-                    //drop bomb!
-                    
-                    Shot *s = [[Shot alloc] initWithFrame:CGRectMake(p.x, p.y, 30, 30)];
-                    s.dx = 0;
-                    s.is_bomb = true;
-                    s.dy = SHOT_SPEED;
-                    s.angle = M_PI/2;
-                    CGAffineTransform t = CGAffineTransformRotate(CGAffineTransformIdentity, (s.angle));
-                    [s setTransform:t];
-                    [self addSubview:s];
-                    [shots addObject:s];
-                    
-                    
-                    j.dropTime--;
-                }
-                j.dropTime--;
                 if ((p.x < 0) || (p.x > r.size.width)){ [j removeFromSuperview]; }
                 
                 

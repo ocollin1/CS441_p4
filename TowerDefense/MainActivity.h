@@ -28,19 +28,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ActivityMain : UIView
+@interface MainActivity : UIView
 //@property (nonatomic, strong) UIImageView *tank;
 @property (nonatomic, weak) IBOutlet UIButton* retButton;
 @property float x,y,dx, dy, reloadT, newJ;
 @property int timeM, timeS, jetTime;
 @property (nonatomic, strong) UIImageView *base;
 @property (nonatomic, strong) NSTimer *timer;
-@property (nonatomic, strong) NSMutableArray  *turrets, *shots, *jets, *shotsToRemove, *jetsToRemove;
+@property (nonatomic, strong) NSMutableArray  *turrets, *shots, *jets;
 @property (nonatomic) BOOL is_destroyed;
 //@property BOOL rotating_l, rotating_r;
 
 //@property (nonatomic, strong) NSMutableArray *boulders;
-- (IBAction)right:(UIButton *)sender;
+//- (IBAction)right:(UIButton *)sender;
 
 
 
