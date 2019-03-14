@@ -14,6 +14,7 @@
 		C8CBD6C42231D93B00440CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6C22231D93B00440CF5 /* LaunchScreen.storyboard */; };
 		C8CBD6CF2231D93C00440CF5 /* TowerDefenseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CBD6CE2231D93C00440CF5 /* TowerDefenseTests.m */; };
 		C8CBD6DA2231D93C00440CF5 /* TowerDefenseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CBD6D92231D93C00440CF5 /* TowerDefenseUITests.m */; };
+		C8D20D6F2239EC0B00D5A1AA /* Turret.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D20D6E2239EC0B00D5A1AA /* Turret.m */; };
 		C8E4DC7022381B420047DD95 /* MainActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E4DC6F22381B420047DD95 /* MainActivity.m */; };
 		C8E4DC7322381E160047DD95 /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E4DC7222381E160047DD95 /* Shot.m */; };
 		C8E4DC7722381FE40047DD95 /* Jet.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E4DC7622381FE40047DD95 /* Jet.m */; };
@@ -51,6 +52,8 @@
 		C8CBD6D52231D93C00440CF5 /* TowerDefenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TowerDefenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CBD6D92231D93C00440CF5 /* TowerDefenseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TowerDefenseUITests.m; sourceTree = "<group>"; };
 		C8CBD6DB2231D93C00440CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8D20D6D2239EB5900D5A1AA /* Turret.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Turret.h; sourceTree = "<group>"; };
+		C8D20D6E2239EC0B00D5A1AA /* Turret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turret.m; sourceTree = "<group>"; };
 		C8E4DC6F22381B420047DD95 /* MainActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainActivity.m; sourceTree = "<group>"; };
 		C8E4DC7122381BFD0047DD95 /* MainActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainActivity.h; sourceTree = "<group>"; };
 		C8E4DC7222381E160047DD95 /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 			children = (
 				C8E4DC7222381E160047DD95 /* Shot.m */,
 				C8E4DC7422381E920047DD95 /* Shot.h */,
+				C8D20D6D2239EB5900D5A1AA /* Turret.h */,
+				C8D20D6E2239EC0B00D5A1AA /* Turret.m */,
 				C8CBD6B02231D93B00440CF5 /* AppDelegate.h */,
 				C8CBD6B12231D93B00440CF5 /* AppDelegate.m */,
 				C8E4DC7122381BFD0047DD95 /* MainActivity.h */,
@@ -288,6 +293,7 @@
 				C8CBD6B22231D93B00440CF5 /* AppDelegate.m in Sources */,
 				C8CBD6AF2231D93B00440CF5 /* main.m in Sources */,
 				C8E4DC7322381E160047DD95 /* Shot.m in Sources */,
+				C8D20D6F2239EC0B00D5A1AA /* Turret.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
