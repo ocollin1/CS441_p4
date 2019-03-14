@@ -18,6 +18,7 @@
 		C8E4DC7022381B420047DD95 /* MainActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E4DC6F22381B420047DD95 /* MainActivity.m */; };
 		C8E4DC7322381E160047DD95 /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E4DC7222381E160047DD95 /* Shot.m */; };
 		C8E4DC7722381FE40047DD95 /* Jet.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E4DC7622381FE40047DD95 /* Jet.m */; };
+		C8FBABA0223AC80D00F64AFD /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FBAB9F223AC80D00F64AFD /* GameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		C8E4DC7422381E920047DD95 /* Shot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shot.h; sourceTree = "<group>"; };
 		C8E4DC7522381FC20047DD95 /* Jet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jet.h; sourceTree = "<group>"; };
 		C8E4DC7622381FE40047DD95 /* Jet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jet.m; sourceTree = "<group>"; };
+		C8FBAB9E223AC7BB00F64AFD /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ../GameViewController.h; sourceTree = "<group>"; };
+		C8FBAB9F223AC80D00F64AFD /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				C8CBD6B12231D93B00440CF5 /* AppDelegate.m */,
 				C8E4DC7122381BFD0047DD95 /* MainActivity.h */,
 				C8E4DC6F22381B420047DD95 /* MainActivity.m */,
+				C8FBAB9F223AC80D00F64AFD /* GameViewController.m */,
+				C8FBAB9E223AC7BB00F64AFD /* GameViewController.h */,
 				C8E4DC7522381FC20047DD95 /* Jet.h */,
 				C8E4DC7622381FE40047DD95 /* Jet.m */,
 				C8CBD6BD2231D93B00440CF5 /* Main.storyboard */,
@@ -290,6 +295,7 @@
 			files = (
 				C8E4DC7022381B420047DD95 /* MainActivity.m in Sources */,
 				C8E4DC7722381FE40047DD95 /* Jet.m in Sources */,
+				C8FBABA0223AC80D00F64AFD /* GameViewController.m in Sources */,
 				C8CBD6B22231D93B00440CF5 /* AppDelegate.m in Sources */,
 				C8CBD6AF2231D93B00440CF5 /* main.m in Sources */,
 				C8E4DC7322381E160047DD95 /* Shot.m in Sources */,

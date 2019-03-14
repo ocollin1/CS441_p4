@@ -9,11 +9,14 @@
 #import "MainActivity.h"
 #import "Shot.h"
 #import "Jet.h"
+#import "Turret.h"
 #define RELOAD ((float) 5)
 #define JET_TIME ((int) 30)
 #define SHOT_SPEED ((int) 30)
 #define TANK_SPEED ((int) 10)
 #define MAIN_TIME ((int) 40)
+#define TURRET_SIZE ((int) 50)
+
 
 @implementation ActivityMain:UIView
 //@synthesize tank;
@@ -24,6 +27,7 @@
 @synthesize turrets;
 @synthesize timeM, timeS, jetTime;
 @synthesize retButton;
+@synthesize base;
 
 /*
  @interface activityMain ()
@@ -43,9 +47,9 @@
     self = [super initWithCoder:aDecoder];
     if (self)
     {
-        //tank = [[UIImageView alloc] initWithFrame:CGRectMake(50, 240, 70, 70];
-        //[tank setImage:[UIImage imageNamed:@"tankRight.png"]];
-        //[self addSubview:tank];
+        base = [[UIImageView alloc] initWithFrame:CGRectMake(50, 240, 70, 70)];
+        [base setImage:[UIImage imageNamed:@"Base"]];
+        [self addSubview:base];
         self.reloadT = RELOAD;
         self.newJ = JET_TIME;
         self.is_destroyed = false;
@@ -106,6 +110,7 @@
 
 - (void) targeter: (UITapGestureRecognizer *)recognizer
 {
+    /*
     //check if enough time has passed to reload
     if(self.reloadT == 0){
         //Code to handle the gesture
@@ -143,6 +148,19 @@
         [self addSubview:s];
         [shots addObject:s];
         self.reloadT = RELOAD;
+    }
+     */
+    
+    //build new turret
+    
+    CGPoint target = [recognizer locationInView:[recognizer.view superview]];
+    
+    if (turrets.count < 10){
+    
+        Turret *t = [[Turret alloc] initWithFrame:CGRectMake(target.x, target.y, TURRET_SIZE, TURRET_SIZE)];
+        [self addSubview:t];
+        [turrets addObject:t];
+        
     }
     
 }
@@ -249,11 +267,11 @@
             //j.notHit = true;
             if(direction < 5){
                 j = [[Jet alloc] initWithFrame:CGRectMake(0, height, 60, 60)];
-                [j setImage:[UIImage imageNamed:@"rightJet"]];
+                [j setImage:[UIImage imageNamed:@"Truck"]];
                 [j setDx:(rand() % 14)+6];
             } else {
                 j = [[Jet alloc] initWithFrame:CGRectMake(r.size.width-50, height, 60, 60)];
-                [j setImage:[UIImage imageNamed:@"leftJet"]];
+                [j setImage:[UIImage imageNamed:@"Truck"]];
                 [j setDx:(rand() % 14)+6];
                 j.dx *= -1;
             }

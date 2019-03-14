@@ -33,6 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) IBOutlet UIButton* retButton;
 @property float x,y,dx, dy, reloadT, newJ;
 @property int timeM, timeS, jetTime;
+@property (nonatomic, strong) UIImageView *base;
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) NSMutableArray  *turrets, *shots, *jets, *shotsToRemove, *jetsToRemove;
 @property (nonatomic) BOOL is_destroyed;
