@@ -1,0 +1,231 @@
+commit b135bf957890859b247eef5d9947cba8c79dc4f6
+Author: Owen Collins <ocollin1@slic-43.pods.bu.int>
+Date:   Fri Mar 15 09:44:51 2019 -0400
+
+    Edited README.md
+
+ README.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 35a3a5a6b71045abbb97aaa5698fcb0a939a1581
+Author: Owen Collins <ocollin1@slic-43.pods.bu.int>
+Date:   Fri Mar 15 09:25:03 2019 -0400
+
+    Final commit, numerous problems remain
+
+ .DS_Store                                           | Bin 6148 -> 6148 bytes
+ Screen Shot 2019-03-15 at 9.21.29 AM.png            | Bin 0 -> 555226 bytes
+ Screen Shot 2019-03-15 at 9.23.15 AM.png            | Bin 0 -> 428860 bytes
+ Screen Shot 2019-03-15 at 9.24.12 AM.png            | Bin 0 -> 451787 bytes
+ TowerDefense.xcodeproj/project.pbxproj              |   6 ++----
+ .../UserInterfaceState.xcuserstate                  | Bin 34817 -> 36080 bytes
+ TowerDefense/Base.lproj/Main.storyboard             |   3 ++-
+ 7 files changed, 4 insertions(+), 5 deletions(-)
+
+commit f10d1d4b3b245a867954ff40401120c8066019f2
+Author: Owen Collins <ocollin1@slic-43.pods.bu.int>
+Date:   Fri Mar 15 08:40:22 2019 -0400
+
+    Moved around some files
+
+ .DS_Store                                           | Bin 6148 -> 6148 bytes
+ TowerDefense.xcodeproj/project.pbxproj              |   2 +-
+ .../UserInterfaceState.xcuserstate                  | Bin 38112 -> 34817 bytes
+ TowerDefense/.DS_Store                              | Bin 6148 -> 6148 bytes
+ .../GameViewController.h                            |   0
+ 5 files changed, 1 insertion(+), 1 deletion(-)
+
+commit 5baacc288c5aa3798e9eb8ea4444fda0ecce7e71
+Author: Owen Collins <ocollin1@slic-43.pods.bu.int>
+Date:   Thu Mar 14 19:20:42 2019 -0400
+
+    finishing on thursday, starting builds
+
+ TowerDefense.xcodeproj/project.pbxproj             |   4 +
+ .../UserInterfaceState.xcuserstate                 | Bin 31096 -> 38112 bytes
+ .../xcdebugger/Breakpoints_v2.xcbkptlist           |  18 ----
+ TowerDefense/Base.lproj/Main.storyboard            |  69 ++++++++++++++-
+ TowerDefense/MainActivity.h                        |   6 +-
+ TowerDefense/MainActivity.m                        |  97 ++++++---------------
+ TowerDefense/main.m                                |  16 ++++
+ 7 files changed, 116 insertions(+), 94 deletions(-)
+
+commit 5a185d15af63dc1ef14825357735b334e182563e
+Author: Owen Collins <ocollin1@slic-43.pods.bu.int>
+Date:   Thu Mar 14 14:13:53 2019 -0400
+
+    First part of thursdays changes. Built GameViewController and implemented some turret functionality
+
+ GameViewController.h                               |  15 +++++++++++
+ TowerDefense.xcodeproj/project.pbxproj             |   6 +++++
+ .../UserInterfaceState.xcuserstate                 | Bin 28478 -> 31096 bytes
+ .../Assets.xcassets/Base.imageset/Base.png         | Bin 0 -> 647475 bytes
+ .../Contents.json                                  |   4 +--
+ TowerDefense/Assets.xcassets/Contents.json         |   6 +++++
+ .../Assets.xcassets/Shot.imageset/Contents.json    |  21 +++++++++++++++
+ .../Assets.xcassets/Shot.imageset/Shot.png         | Bin 0 -> 63659 bytes
+ .../Spaceship.imageset/Spaceship.png               | Bin 134723 -> 0 bytes
+ .../Assets.xcassets/Truck.imageset/Contents.json   |  21 +++++++++++++++
+ .../Assets.xcassets/Truck.imageset/Truck.png       | Bin 0 -> 2323883 bytes
+ .../Assets.xcassets/Turret.imageset/Contents.json  |  21 +++++++++++++++
+ .../Assets.xcassets/Turret.imageset/Turret.png     | Bin 0 -> 2561791 bytes
+ TowerDefense/Base.lproj/Main.storyboard            |   2 +-
+ TowerDefense/GameViewController.m                  |  29 +++++++++++++++++++++
+ TowerDefense/MainActivity.h                        |   1 +
+ TowerDefense/MainActivity.m                        |  28 ++++++++++++++++----
+ 17 files changed, 146 insertions(+), 8 deletions(-)
+
+commit 588a22fcad74d68df6047e537fb308248e3c426e
+Author: Owen Collins <ocollin1@bl-n34.pods.bu.int>
+Date:   Wed Mar 13 21:58:27 2019 -0400
+
+    Built turret object
+
+ TowerDefense.xcodeproj/project.pbxproj             |   6 +++++
+ .../UserInterfaceState.xcuserstate                 | Bin 27158 -> 28478 bytes
+ TowerDefense/.DS_Store                             | Bin 6148 -> 6148 bytes
+ TowerDefense/Turret.h                              |  26 +++++++++++++++++++++
+ TowerDefense/Turret.m                              |  26 +++++++++++++++++++++
+ 5 files changed, 58 insertions(+)
+
+commit f6903772f939d3fd0f3aedb55830a214cb187c83
+Author: Owen Collins <ocollin1@slic-43.pods.bu.int>
+Date:   Tue Mar 12 13:23:00 2019 -0400
+
+    restored lost files, added logic for change to group of turrets
+
+ TowerDefense.xcodeproj/project.pbxproj             |  34 +-
+ .../UserInterfaceState.xcuserstate                 | Bin 23803 -> 27158 bytes
+ TowerDefense/ActivityMain.m                        | 370 --------------------
+ TowerDefense/Base.lproj/Main.storyboard            |  17 +-
+ TowerDefense/Jet.h                                 |  22 ++
+ TowerDefense/Jet.m                                 |  28 ++
+ TowerDefense/{ActivityMain.h => MainActivity.h}    |  37 +-
+ TowerDefense/MainActivity.m                        | 374 +++++++++++++++++++++
+ TowerDefense/Shot.h                                |   2 +-
+ TowerDefense/Shot.m                                |  23 +-
+ TowerDefense/main.m                                |  16 -
+ 11 files changed, 480 insertions(+), 443 deletions(-)
+
+commit dd3e240b307aa22d0ec1a8cd1a808ab16862bd1b
+Author: Owen Collins <ocollin1@binghamton.edu>
+Date:   Mon Mar 11 15:51:51 2019 -0400
+
+    added files from p3
+
+ TowerDefense/ActivityMain.h |  47 ++++++
+ TowerDefense/ActivityMain.m | 370 ++++++++++++++++++++++++++++++++++++++++++++
+ TowerDefense/Shot.h         |  21 +++
+ TowerDefense/main.m         |   2 +-
+ 4 files changed, 439 insertions(+), 1 deletion(-)
+
+commit c3175646ccaf3b69c76759daf0ab1cd6fa3a8bcb
+Author: Owen Collins <ocollin1@slic-38.pods.bu.int>
+Date:   Mon Mar 11 15:50:55 2019 -0400
+
+    More changes
+
+ TowerDefense/.DS_Store            | Bin 0 -> 6148 bytes
+ TowerDefense/GameScene.h          |  13 ------
+ TowerDefense/GameScene.m          |  85 --------------------------------------
+ TowerDefense/GameScene.sks        | Bin 4084 -> 0 bytes
+ TowerDefense/GameViewController.h |  15 -------
+ TowerDefense/GameViewController.m |  53 ------------------------
+ 6 files changed, 166 deletions(-)
+
+commit 2f9887bb9e33b73bdb6ab2382f7a34a4022e7264
+Author: Owen Collins <ocollin1@slic-38.pods.bu.int>
+Date:   Mon Mar 11 15:44:36 2019 -0400
+
+    added code from p3 t act as library code for p4
+
+ TowerDefense.xcodeproj/project.pbxproj             |  36 +++++++++------------
+ .../xcshareddata/TowerDefense.xcscmblueprint       |  30 +++++++++++++++++
+ .../UserInterfaceState.xcuserstate                 | Bin 22857 -> 23803 bytes
+ TowerDefense/Shot.m                                |  17 ++++++++++
+ 4 files changed, 63 insertions(+), 20 deletions(-)
+
+commit fd041e1b049f6799fac57f30e6598a21e56eee64
+Author: Owen Collins <ocollin1@binghamton.edu>
+Date:   Mon Mar 11 15:07:46 2019 -0400
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 6eca4a5a5b7e148bbef0ded4aca07ea7605415a9
+Author: Owen Collins <ocollin1@binghamton.edu>
+Date:   Mon Mar 11 15:07:22 2019 -0400
+
+    Update README.md
+
+ README.md | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit f8cf8993f78cc6b7bb704450002fe790a574bc59
+Author: Owen Collins <ocollin1@slic-38.pods.bu.int>
+Date:   Mon Mar 11 15:03:36 2019 -0400
+
+    first commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit da2aee875dbf45c56f9e63132a8f285549bad8ff
+Author: Owen Collins <ocollin1@bl-n36.pods.bu.int>
+Date:   Sat Mar 9 13:23:11 2019 -0500
+
+    Saturday canges
+
+ TowerDefense.xcodeproj/project.pbxproj             |   4 +++
+ .../UserInterfaceState.xcuserstate                 | Bin 11861 -> 22857 bytes
+ .../xcdebugger/Breakpoints_v2.xcbkptlist           |  23 +++++++++++++++++
+ TowerDefense/Actions.sks                           | Bin 1892 -> 1942 bytes
+ .../AppIcon.appiconset/Contents.json               |  25 ++++++++++++++++++
+ TowerDefense/Base.lproj/Main.storyboard            |  28 ++++++++++++++++++---
+ TowerDefense/GameScene.m                           |  11 +++++---
+ TowerDefense/GameScene.sks                         | Bin 4694 -> 4084 bytes
+ 8 files changed, 83 insertions(+), 8 deletions(-)
+
+commit 5e0ef9620d903dc9ce898ec4380844b239b8f0f0
+Author: Owen Collins <ocollin1@slic-43.pods.bu.int>
+Date:   Thu Mar 7 18:04:37 2019 -0500
+
+    initial commit
+
+ .DS_Store                                          | Bin 0 -> 6148 bytes
+ TowerDefense.xcodeproj/project.pbxproj             | 547 +++++++++++++++++++++
+ .../project.xcworkspace/contents.xcworkspacedata   |   7 +
+ .../UserInterfaceState.xcuserstate                 | Bin 0 -> 11861 bytes
+ .../xcschemes/TowerDefense.xcscheme                | 111 +++++
+ .../xcschemes/xcschememanagement.plist             |  32 ++
+ TowerDefense/Actions.sks                           | Bin 0 -> 1892 bytes
+ TowerDefense/AppDelegate.h                         |  17 +
+ TowerDefense/AppDelegate.m                         |  51 ++
+ .../AppIcon.appiconset/Contents.json               |  68 +++
+ .../Spaceship.imageset/Contents.json               |  21 +
+ .../Spaceship.imageset/Spaceship.png               | Bin 0 -> 134723 bytes
+ TowerDefense/Base.lproj/LaunchScreen.storyboard    |  31 ++
+ TowerDefense/Base.lproj/Main.storyboard            |  26 +
+ TowerDefense/GameScene.h                           |  13 +
+ TowerDefense/GameScene.m                           |  82 +++
+ TowerDefense/GameScene.sks                         | Bin 0 -> 4694 bytes
+ TowerDefense/GameViewController.h                  |  15 +
+ TowerDefense/GameViewController.m                  |  53 ++
+ TowerDefense/Info.plist                            |  48 ++
+ TowerDefense/main.m                                |  16 +
+ TowerDefenseTests/Info.plist                       |  22 +
+ TowerDefenseTests/TowerDefenseTests.m              |  39 ++
+ TowerDefenseUITests/Info.plist                     |  22 +
+ TowerDefenseUITests/TowerDefenseUITests.m          |  40 ++
+ 25 files changed, 1261 insertions(+)
+
+commit f68435bcdcaf59c3fd00013bd34d6722e69adaa0
+Author: Owen Collins <ocollin1@binghamton.edu>
+Date:   Thu Mar 7 17:55:03 2019 -0500
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
