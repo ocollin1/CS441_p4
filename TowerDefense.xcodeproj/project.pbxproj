@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C83F7886223B0E5A00BEBBE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C83F7885223B0E5A00BEBBE2 /* main.m */; };
-		C8CBD6AF2231D93B00440CF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CBD6AE2231D93B00440CF5 /* main.m */; };
+		C8BCE2F4223BDA7500C33EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6BD2231D93B00440CF5 /* Main.storyboard */; };
 		C8CBD6B22231D93B00440CF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CBD6B12231D93B00440CF5 /* AppDelegate.m */; };
-		C8CBD6BF2231D93B00440CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6BD2231D93B00440CF5 /* Main.storyboard */; };
 		C8CBD6C12231D93B00440CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6C02231D93B00440CF5 /* Assets.xcassets */; };
 		C8CBD6C42231D93B00440CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CBD6C22231D93B00440CF5 /* LaunchScreen.storyboard */; };
 		C8CBD6CF2231D93C00440CF5 /* TowerDefenseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CBD6CE2231D93C00440CF5 /* TowerDefenseTests.m */; };
@@ -269,7 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8CBD6BF2231D93B00440CF5 /* Main.storyboard in Resources */,
+				C8BCE2F4223BDA7500C33EDD /* Main.storyboard in Resources */,
 				C8CBD6C12231D93B00440CF5 /* Assets.xcassets in Resources */,
 				C8CBD6C42231D93B00440CF5 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -300,7 +299,6 @@
 				C8E4DC7722381FE40047DD95 /* Jet.m in Sources */,
 				C8FBABA0223AC80D00F64AFD /* GameViewController.m in Sources */,
 				C8CBD6B22231D93B00440CF5 /* AppDelegate.m in Sources */,
-				C8CBD6AF2231D93B00440CF5 /* main.m in Sources */,
 				C8E4DC7322381E160047DD95 /* Shot.m in Sources */,
 				C83F7886223B0E5A00BEBBE2 /* main.m in Sources */,
 				C8D20D6F2239EC0B00D5A1AA /* Turret.m in Sources */,
