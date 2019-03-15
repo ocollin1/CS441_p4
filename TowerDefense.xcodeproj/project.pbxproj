@@ -63,7 +63,7 @@
 		C8E4DC7422381E920047DD95 /* Shot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shot.h; sourceTree = "<group>"; };
 		C8E4DC7522381FC20047DD95 /* Jet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jet.h; sourceTree = "<group>"; };
 		C8E4DC7622381FE40047DD95 /* Jet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jet.m; sourceTree = "<group>"; };
-		C8FBAB9E223AC7BB00F64AFD /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ../GameViewController.h; sourceTree = "<group>"; };
+		C8FBAB9E223AC7BB00F64AFD /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		C8FBAB9F223AC80D00F64AFD /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
